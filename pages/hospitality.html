@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive -->
+    <title>Car Wash - Customer Hospitality and Comfort</title> <!-- SEO optimized title -->
+    <meta name="description" content="Experience our customer hospitality at the car wash. Enjoy free coffee, Wi-Fi, comfortable seating, and a kids play corner while your car gets the best treatment.">
+    <meta name="keywords" content="car wash hospitality, customer comfort, free Wi-Fi car wash, coffee while waiting, kids play area, comfortable car wash waiting">
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to unified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="../JS/script.js" defer></script>
+</head>
+<body>
+    <!-- ================= HEADER / NAVIGATION ================= -->
+    <header>
+        <h1>Customer Hospitality</h1> <!-- Header title -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Link to Home page -->
+                <li><a href="service.html">Services</a></li> <!-- Link to Services page -->
+                <li><a href="appointments.html">Book Appointment</a></li> <!-- Link to Book Appointment page -->
+                <li><a href="contact.html">Contact Us</a></li> <!-- Link to Contact page --> 
+                <li><a href="hospitality.html" class="active">Hospitality</a></li> <!-- Link to Current Hospitality page --> 
+            </ul>
+        </nav>
+    </header>
+    <!-- ================= HOSPITALITY SECTION ================= -->
+    <section class="hospitality-section">
+        <h2>Making You Feel Welcome</h2>
+        <p>At our car wash, we don't just clean cars — we care about your experience too.</p>
+
+        <!-- Tabs for different hospitality categories -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab('amenities')">Amenities</button>
+            <button class="tab-button" onclick="openTab('comfort')">Comfort</button>
+            <button class="tab-button" onclick="openTab('entertainment')">Entertainment</button>
+        </div>
+
+        <div id="amenities" class="tab-content active">
+            <h3>Refreshments & Amenities</h3>
+            <ul>
+                <li>Free coffee and tea while you wait</li>
+                <li>Complimentary bottled water</li>
+                <li>Clean restroom facilities</li>
+            </ul>
+        </div>
+
+        <div id="comfort" class="tab-content">
+            <h3>Comfort & Convenience</h3>
+            <ul>
+                <li>Comfortable seating area with free Wi-Fi</li>
+                <li>Climate-controlled waiting area</li>
+                <li>Friendly staff ready to assist you</li>
+            </ul>
+        </div>
+
+        <div id="entertainment" class="tab-content">
+            <h3>Family Entertainment</h3>
+            <ul>
+                <li>Kids play corner to keep little ones happy</li>
+                <li>Reading materials and magazines</li>
+                <li>TV with entertainment channels</li>
+            </ul>
+        </div>
+
+        <p>We want you to feel relaxed while we give your car the best treatment possible.</p>
+    </section>
+
+  <!-- ================= FOOTER ================= -->
+     <footer>
+        <p>&copy;2025 Car wash.All Right Reserved</p>
+        <div id="real-time-clock" class="clock-display"></div>
+    </footer>
+    
+    <div class="social-icons">
+                <a href="http://www.instagram.com/" class="instagram" data-platform="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="http://www.facebook.com" class="facebook" data-platform="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="http://www.twitter.com/" class="twitter" data-platform="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="http://www.tiktok.com/" class="tiktok" data-platform="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+</body>
+</html>

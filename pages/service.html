@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive -->
+    <title>Car Wash - Professional Car Wash and Detailing Services</title> <!-- SEO optimized title -->
+    <meta name="description" content="Explore our comprehensive car wash and detailing services including basic wash, full detailing, interior vacuuming, exterior waxing, engine cleaning, and tire shine.">
+    <meta name="keywords" content="car wash services, car detailing, vehicle cleaning, auto detailing services, South Africa car care, professional car wash">
+    <link rel="stylesheet" href="../css/style.css">   <!-- Link to common CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="../JS/script.js" defer></script>
+</head>
+<header>
+    <!-- ================= HEADER / NAVIGATION ================= -->
+    <header>
+        <h1>Welcome to the Car Wash!</h1> <!-- Header title --> 
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li> <!-- Link to Home page -->
+                <li><a href="Book appointments.html">Book Appointment</a></li> <!-- Link to Book Appointment page -->
+                <li><a href="hospitality.html">hospitality</a></li> <!-- Link to Hospitality page -->
+                <li><a href="service.html">Services</a></li> <!-- Current Services page -->
+                <li><a href="contact.html">Contact Us</a></li> <!-- Link to Contact page -->
+            </ul>
+        </nav>
+    </header>
+
+
+    <body>
+    <!-- ================= SEARCH SECTION ================= -->
+    <section class="search-section">
+        <h2>Find Your Service</h2>
+        <input type="text" id="service-search" placeholder="Search for services (e.g., wash, detailing, waxing)" onkeyup="filterServices()">
+    </section>
+
+    <!-- ================= SERVICE SECTION ================= -->
+        <section class="services-section">
+         <!-- Services list with images -->
+            <h2>Our Car Wash Services</h2>
+            <ul id="services-list">
+                <li class="service-item">
+                    <h3>Basic Car Wash</h3>
+                    <p>A quick exterior wash to make your car sparkle.</p>
+                    <img src="../assets/car.jpg" alt="Clean car after basic wash service showing sparkling exterior" width="400" height="400" class="lightbox-trigger">
+                </li>
+                <li class="service-item">
+                    <h3>Full Car Detailing</h3>
+                    <p>Complete interior and exterior deep cleaning.</p>
+                    <img src="../assets/car2.jpg" alt="Professional car detailing service showing detailed interior and exterior" width="400" height="400" class="lightbox-trigger">
+                </li>
+                <li class="service-item">
+                    <h3>Interior Vacuuming</h3>
+                    <p>Remove dust, dirt, and allergens from inside your car.</p>
+                    <img src="../assets/car3.jpg" alt="Car interior vacuuming service showing clean seats and carpets" width="400" height="400" class="lightbox-trigger">
+                </li>
+                <li class="service-item">
+                    <h3>Exterior Waxing</h3>
+                    <p>Protects paint and restores shine.</p>
+                    <img src="../assets/engine.webp" alt="Car exterior waxing service showing shiny waxed paint" width="400" height="400" class="lightbox-trigger">
+                </li>
+                <li class="service-item">
+                    <h3>Engine Cleaning</h3>
+                    <p>Safe and effective cleaning to keep your engine fresh.</p>
+                    <img src="../assets/car num 4.webp" alt="Clean car engine after professional cleaning service" width="400" height="400" class="lightbox-trigger">
+                </li>
+                <li class="service-item">
+                    <h3>Tire Shine</h3>
+                    <p>Gives your tires a glossy, new look.</p>
+                    <img src="../assets/shine.jpg" alt="Shiny tires after tire shine service" width="400" height="400" class="lightbox-trigger">
+                </li>
+            </ul>
+        </section>
+
+        <!-- Lightbox for Gallery -->
+        <div id="lightbox" class="lightbox" style="display: none;">
+            <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+            <div id="lightbox-caption"></div>
+        </div>
+         <!-- ================= FOOTER ================= -->
+        <footer>
+            <p>&copy;2025 Car wash.All Right Reserved</p>
+            <div id="real-time-clock" class="clock-display"></div>
+            </footer>
+            
+            <div class="social-icons">
+                <a href="http://www.instagram.com/" class="instagram" data-platform="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="http://www.facebook.com" class="facebook" data-platform="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="http://www.twitter.com/" class="twitter" data-platform="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="http://www.tiktok.com/" class="tiktok" data-platform="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            
+    </body>
+    </html>
+    

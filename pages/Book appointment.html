@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive -->
+    <title>Car Wash - Book Your Appointment Online</title> <!-- SEO optimized title -->
+    <meta name="description" content="Book your car wash appointment online. Choose from basic wash, full detailing, and more services. Easy online booking with instant confirmation.">
+    <meta name="keywords" content="book car wash appointment, car detailing booking, online car wash reservation, vehicle cleaning schedule, South Africa car services">
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="../JS/script.js" defer></script>
+</head>
+<body>
+    <!-- ================= HEADER / NAVIGATION ================= -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li> <!-- Link to Home page -->
+                <li><a href="Book appointment.html">Book Appointment</a></li> <!-- Link to current Book appointment page -->
+                <li><a href="hospitality.html">hospitality</a></li> <!-- Link to Hospitality page -->
+                <li><a href="service.html">Services</a></li> <!-- Link to Services page -->
+                <li><a href="contact.html">Contact Us</a></li>  <!-- Link to Contact page -->
+            </ul>
+        </nav>
+    </header>
+      <!-- ================= BOOKING FORM SECTION ================= -->
+    <div class="booking-form-container">
+        <h2>Book Your Car Wash Appointment</h2>
+        <!-- Feedback Messages -->
+        <div id="form-feedback" class="feedback-message" style="display: none;"></div>
+
+        <!-- Appointment form -->
+        <form id="bookingForm" onsubmit="submitBookingForm(event)">
+             <!-- Full Name input -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name">
+            <span id="name-error" class="error-message"></span>
+
+             <!-- Phone Number input -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number (e.g., 0791234567)">
+            <span id="phone-error" class="error-message"></span>
+
+             <!-- Booking Date input -->
+            <label for="date">Booking Date:</label>
+            <input type="date" id="date" name="date">
+            <span id="date-error" class="error-message"></span>
+
+             <!-- Booking Time input -->
+            <label for="time">Booking Time:</label>
+            <input type="time" id="time" name="time">
+            <span id="time-error" class="error-message"></span>
+
+             <!-- Service Selection -->
+            <label for="service">Select Service:</label>
+            <select id="service" name="service">
+                <option value="">Choose a service</option>
+                <option value="basic">Basic Car Wash</option>
+                <option value="full">Full Car Detailing</option>
+                <option value="interior">Interior Vacuuming</option>
+                <option value="exterior">Exterior Waxing</option>
+                <option value="engine">Engine Cleaning</option>
+                <option value="tire">Tire Shine</option>
+            </select>
+            <span id="service-error" class="error-message"></span>
+
+             <!-- Additional Message textarea -->
+            <label for="message">Additional Message:</label>
+            <textarea id="message" name="message" placeholder="Enter any additional information..." rows="4"></textarea>
+
+             <!-- Submit button -->
+            <button type="submit">Book Appointment</button>
+        </form>
+
+        <!-- Modal for confirmation -->
+        <div id="booking-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <h3>Appointment Confirmed!</h3>
+                <p id="modal-message"></p>
+                <button onclick="closeModal()">OK</button>
+            </div>
+        </div>
+    </div>
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>&copy;2025 Car wash.All Right Reserved</p> <!-- Footer text -->
+        <div id="real-time-clock" class="clock-display"></div>
+        </footer>
+        
+        <div class="social-icons">
+                <a href="http://www.instagram.com/" class="instagram" data-platform="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="http://www.facebook.com" class="facebook" data-platform="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="http://www.twitter.com/" class="twitter" data-platform="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="http://www.tiktok.com/" class="tiktok" data-platform="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+</body>
+</html>
