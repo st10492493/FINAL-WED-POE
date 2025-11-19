@@ -1,4 +1,5 @@
-# TODO List for Updating References to Harvard Style
+# TODO List for Fixing Page Navigation
 
-- [x] Update the header sentence in CHANGELOG.md to use inline Harvard citations (e.g., "The format is based on Keep a Changelog (2023), and this project adheres to Semantic Versioning (2023).")
-- [x] Add a References section at the end of CHANGELOG.md with full Harvard-style citations for "Keep a Changelog" and "Semantic Versioning", including URLs and access dates.
+- [x] Fix contact.html: Update nav link from "Book appointments.html" to "Book appointment.html"
+- [x] Fix service.html: Update nav link from "Book appointments.html" to "Book appointment.html"
+- [x] Fix hospitality.html: Update Home link to "../index.html", change "appointments.html" to "Book appointment.html", and reorder nav to match index.html (Home, Book Appointment, Hospitality, Services, Contact Us)
